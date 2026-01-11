@@ -5,7 +5,7 @@ This dataset contains retail sales transaction data from a Superstore, capturing
 
 Each row represents a single product-level transaction within a customer order, making the dataset suitable for both Exploratory Data Analysis (EDA) and Business Intelligence analysis.
 
-🛒 Order & Customer Information
+## 🛒 Order & Customer Information
 
 - `order_id` – Unique identifier for each order
 
