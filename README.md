@@ -7,45 +7,45 @@ Each row represents a single product-level transaction within a customer order, 
 
 🛒 Order & Customer Information
 
-order_id – Unique identifier for each order
+- order_id – Unique identifier for each order
 
-order_date – Date when the order was placed
+- order_date – Date when the order was placed
 
-ship_date – Date when the order was shipped
+- ship_date – Date when the order was shipped
 
-ship_mode – Shipping method used
+- ship_mode – Shipping method used
 
-customer_id – Unique customer identifier
+- customer_id – Unique customer identifier
 
-customer_name – Name of the customer
+- customer_name – Name of the customer
 
-segment – Customer segment (Consumer, Corporate, Home Office)
+- segment – Customer segment (Consumer, Corporate, Home Office)
 
 🌍 Geographical Details
 
-country – Country of sale
+- country – Country of sale
 
-city – City where the order was delivered
+- city – City where the order was delivered
 
-state – State of delivery
+- state – State of delivery
 
-postal_code – Postal code of the delivery location
+- postal_code – Postal code of the delivery location
 
-region – Sales region (East, West, Central, South)
+- region – Sales region (East, West, Central, South)
 
 📦 Product Information
 
-product_id – Unique product identifier
+- product_id – Unique product identifier
 
-category – Product category
+- category – Product category
 
-sub_category – Product sub-category
+- sub_category – Product sub-category
 
-product_name – Name of the product
+- product_name – Name of the product
 
 💰 Sales Metrics
 
-sales – Sales value generated from the transaction
+- sales – Sales value generated from the transaction
 
 📐 Dataset Size
 
