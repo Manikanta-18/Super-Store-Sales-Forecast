@@ -20,6 +20,7 @@ Each row represents a single product-level transaction within a customer order, 
 - customer_name – Name of the customer
 
 - segment – Customer segment (Consumer, Corporate, Home Office)
+  
 
 🌍 Geographical Details
 
@@ -32,6 +33,7 @@ Each row represents a single product-level transaction within a customer order, 
 - postal_code – Postal code of the delivery location
 
 - region – Sales region (East, West, Central, South)
+  
 
 📦 Product Information
 
@@ -42,10 +44,12 @@ Each row represents a single product-level transaction within a customer order, 
 - sub_category – Product sub-category
 
 - product_name – Name of the product
+  
 
 💰 Sales Metrics
 
 - sales – Sales value generated from the transaction
+  
 
 📐 Dataset Size
 
