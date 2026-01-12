@@ -52,3 +52,6 @@ Each row represents a single product-level transaction within a customer order, 
 - **Rows:** ~9,800 transactions
 
 - **Columns:** 18 features
+
+# Exploratory Data Analysis (EDA) and Time Series Forecasting
+
