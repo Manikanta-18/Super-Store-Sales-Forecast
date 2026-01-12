@@ -1,9 +1,16 @@
 # Super-Store-Sales-Forecast
 ## 📊 Dataset Overview
+The dataset contains historical retail sales data from a Superstore, primarily used to analyze and forecast sales over time. The focus of this project is on understanding **temporal sales patterns** rather than detailed customer or product-level behavior.
 
-This dataset contains retail sales transaction data from a Superstore, capturing order details, customer information, product categories, geographical distribution, and sales performance. It is designed to analyze sales trends, customer behavior, regional performance, and product-level insights in a retail business context.
+The key variable used for analysis is the **sales value**, along with the **order date**, which is converted into a time-based format. Sales data is aggregated at a **monthly level** to construct a univariate time series suitable for forecasting.
 
-Each row represents a single product-level transaction within a customer order, making the dataset suitable for both Exploratory Data Analysis (EDA) and Business Intelligence analysis.
+Each record contributes to the overall sales trend for a given time period, enabling:
+- Trend analysis
+- Seasonality detection
+- Time series modeling and future sales prediction
+
+This dataset is well-suited for applying **time series forecasting techniques such as ARIMA**, helping simulate real-world demand forecasting scenarios in retail businesses.
+
 
 ## 🛒 Order & Customer Information
 
