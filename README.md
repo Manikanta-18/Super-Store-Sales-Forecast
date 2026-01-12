@@ -60,5 +60,6 @@ This dataset is well-suited for applying **time series forecasting techniques su
 
 - **Columns:** 18 features  
 
-# Exploratory Data Analysis (EDA) and Time Series Forecasting
+# Exploratory Data Analysis (EDA)
+
 
