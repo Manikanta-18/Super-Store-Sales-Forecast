@@ -49,6 +49,6 @@ Each row represents a single product-level transaction within a customer order, 
 
 ## 📐 Dataset Size
 
-**Rows:** ~9,800 transactions
+- **Rows:** ~9,800 transactions
 
-**Columns:** 18 features
+- **Columns:** 18 features
