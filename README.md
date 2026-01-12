@@ -62,4 +62,11 @@ This dataset is well-suited for applying **time series forecasting techniques su
 
 # Exploratory Data Analysis (EDA)
 
+## Importing and Understanding the Data
+- Imported required Python libraries (Pandas, NumPy, Matplotlib, Seaborn) and loaded the Super Store sales CSV file into a Pandas DataFrame.
+- Inspected the dataset to understand its structure, key columns (sales and order date), data types, and values in few columns.
+
+## Preprocessing
+- Dropped the unnecessary columns and converted Order Date and Ship Date columns to datetime format to enable time-based analysis.
+
 
