@@ -69,4 +69,14 @@ This dataset is well-suited for applying **time series forecasting techniques su
 ## Preprocessing
 - Dropped the unnecessary columns and converted Order Date and Ship Date columns to datetime format to enable time-based analysis.
 
+## Takeaways from Visualizations:
+- West region contributes the highest share of total sales (~31%), indicating it is the strongest performing region, while the South region contributes the least (~17%), highlighting potential opportunities for growth or targeted business strategies there.
+- California and New York dominate total sales, significantly outperforming other states, indicating that sales are heavily concentrated in a few high-performing regions.
+- Standard Class shipping generates the highest sales, indicating it is the most preferred and cost-effective option for customers, while Same Day shipping contributes the least, suggesting lower demand for premium delivery services.
+- Sales purchase range with percentage.
+
+## Monthly Sales Trend Analysis
+
+
+
 
