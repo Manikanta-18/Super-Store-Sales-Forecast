@@ -76,6 +76,19 @@ This dataset is well-suited for applying **time series forecasting techniques su
 - Sales purchase range with percentage.
 
 ## Monthly Sales Trend Analysis
+- Visualized the distribution of sales and identified a strong right skew, indicating that a small number of high-value transactions significantly impact total sales.
+
+- Removed extreme outliers using the Z-score method (±3) to reduce noise and obtain a more reliable representation of underlying sales patterns.
+
+- Aggregated sales data at a monthly level after sorting by order date, revealing a clear upward trend in sales over time.
+
+- Plotted monthly sales trends, which showed consistent growth along with noticeable fluctuations across months.
+
+- Performed seasonal decomposition to separate trend, seasonal, and residual components, confirming the presence of strong annual seasonality.
+
+- Analyzed residuals, which were mostly centered around zero, indicating that trend and seasonality explain most of the variation in sales.
+
+- Compared monthly sales across years (2015–2018), showing that each year outperformed the previous one, reflecting increasing demand and business growth.
 
 
 
