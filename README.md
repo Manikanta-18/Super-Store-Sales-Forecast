@@ -92,15 +92,17 @@ This dataset is well-suited for applying **time series forecasting techniques su
 - Compared monthly sales across years (2015–2018), showing that each year outperformed the previous one, reflecting increasing demand and business growth.
 
 
-# ARIMA
+# Train–Test Split and Stationarity Check:
+- The dataset spans 2015–2018, with 2015–2017 used as the training set and 2018 used as the test set.
+- Applied the Augmented Dickey–Fuller (ADF) test to assess stationarity and confirmed that the training data is stationary, meaning its statistical properties (mean and variance) remain constant over time.
 
-# PMDARIMA
+# Forecasting Models:
+## 🔹 ARIMA  
+## 🔹 PMDARIMA  
+## 🔹 SARIMA  
+## 🔹 FB Prophet  
 
-# SARIMA
-
-# FB Prophet
-
-# Comparing the model and Forecasting the model with best model
+# Comparing the model and Forecasting the model with the best model
 
 
 
