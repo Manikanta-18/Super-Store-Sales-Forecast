@@ -73,7 +73,8 @@ This dataset is well-suited for applying **time series forecasting techniques su
 - West region contributes the highest share of total sales (~31%), indicating it is the strongest performing region, while the South region contributes the least (~17%), highlighting potential opportunities for growth or targeted business strategies there.
 - California and New York dominate total sales, significantly outperforming other states, indicating that sales are heavily concentrated in a few high-performing regions.
 - Standard Class shipping generates the highest sales, indicating it is the most preferred and cost-effective option for customers, while Same Day shipping contributes the least, suggesting lower demand for premium delivery services.
-- Sales purchase range with percentage.
+- Despite having 1,800+ products, just five items (Canon imageCLASS 2200 Advanced Copier, Fellowes PB500, Cisco TelePresence EX90, HON 5400 Series Chairs, and GBC DocuBind TL300) accounted for ~7% of total sales.
+- Order volume remains relatively steady from March to August, followed by a sharp surge in September and peak activity in November–December, indicating strong year-end seasonality.
 
 ## 📈 Monthly Sales Trend Analysis
 - Visualized the distribution of sales and identified a strong right skew, indicating that a small number of high-value transactions significantly impact total sales.
