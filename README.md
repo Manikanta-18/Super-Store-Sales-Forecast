@@ -96,6 +96,11 @@ This dataset is well-suited for applying **time series forecasting techniques su
 - The dataset spans 2015–2018, with 2015–2017 used as the training set and 2018 used as the test set.
 - Applied the Augmented Dickey–Fuller (ADF) test to assess stationarity and confirmed that the training data is stationary, meaning its statistical properties (mean and variance) remain constant over time.
 
+# ACF and PACF plots:
+## 📊 ACF Plot:
+
+## 📊 PACF Plots:
+
 # Forecasting Models:
 ## 🔹 ARIMA  
 ## 🔹 PMDARIMA  
