@@ -109,8 +109,9 @@ This dataset is well-suited for applying **time series forecasting techniques su
 # ACF and PACF plots:
 ## 📊 Autocorrelation Function(ACF) Plot:
 - Measures how a value is correlated with its past values
-   ACF(k)=Corr(Yt​,Yt−k​)
-  - MA (Moving Average) model:
+  - ACF(k)=Corr(Yt​,Yt−k​)
+  - Depends on past errors
+  - ACF helps find q
 
 \[
 Y_t = \epsilon_t + \theta_1 \epsilon_{t-1}
@@ -120,26 +121,45 @@ Y_t = \epsilon_t + \theta_1 \epsilon_{t-1}
 
 ## 📊 PACF Plots:
 - Measures the direct correlation with a lag, after removing effects of intermediate lags
-  PACF(k)=Corr(Yt​,Yt−k​∣Yt−1​,Yt−2​,…,Yt−k+1​)
-- AR (AutoRegressive) model
-\[
-Y_t = \phi_1 Y_{t-1} + \phi_2 Y_{t-2} + \epsilon_t
-\]
+  - PACF(k)=Corr(Yt​,Yt−k​∣Yt−1​,Yt−2​,…,Yt−k+1​)
   - Depends on past values
   - PACF helps find p
  
   
 # Forecasting Models:
-## 🔹 AR 
--AR(p):
+## 🔹 AR (AutoRegressive) model:
+- AR(p):
+  - AR(p) Model: Y_t = φ₁ Y_{t−1} + φ₂ Y_{t−2} + … + φₚ Y_{t−p} + ε_t
   - PACF → cuts off after lag p
   - ACF → decays gradually
-## 🔹 ARIMA  
-## 🔹 PMDARIMA  
-## 🔹 SARIMA  
-## 🔹 FB Prophet  
+    
+## 🔹 MA (Moving Average) model:
+- MA(q):
+  - MA(q) Model: Y_t = ε_t + θ₁ ε_(t−1) + … + θ_q ε_(t−q)
+  - ACF → cuts off after lag q
+  - PACF → decays gradually
+- We use ACF to identify the MA order because MA models are defined by how long past shocks (errors) remain correlated with the present, and ACF directly measures correlation caused by those past shocks.
+- ACF helps identify how many past shocks (errors) influence the current value; if q = 8, then the current value depends on the last 8 error terms
+- ACF measures: “Is today statistically related to the value k periods ago?”- In an MA model, this relation comes only from shared shocks.
+## 🔹 ARMA or ARIMA model
+- ARIMA (AutoRegressive Integrated Moving Average) combines AR(p), differencing 𝑑, and MA(q) components to model time-series data that becomes stationary after differencing.
+- The “Integrated” part (d) handles non-stationarity by differencing the data to remove trends and stabilize the mean over time.
+- This model is used when both the ACF and PACF decay gradually, with no sharp cutoff observed in either plot. 
+## 🔹 PMDARIMA
+- Automatically identifies the optimal ARIMA/SARIMA orders `(p, d, q)` and `(P, D, Q, s)` by using multiple combinations of paramaters.
+- Reduces manual trial-and-error by handling differencing, seasonality detection, and model selection.
+  
+## 🔹 SARIMA or SARMA
+- SARIMA (Seasonal AutoRegressive Integrated Moving Average) extends ARIMA by incorporating seasonal AR, differencing, and MA components to model time-series data with seasonality.
+- The seasonal terms `(P, D, Q, s)` handle repeating patterns by applying seasonal differencing and seasonal AR/MA effects, making the series stationary across seasons.
+- This model is used when the ACF and PACF show significant patterns at seasonal lags (multiples of the seasonal period `s`), along with gradual decay at non-seasonal lags.
 
-# Comparing the model and Forecasting the model with the best model
+## 🔹 FB Prophet
+- FB Prophet is a time-series forecasting model designed to handle trends, seasonality, and holiday effects with minimal manual tuning.
+- It models time series as an additive combination of trend, seasonality (daily, weekly, yearly), and external events, making it robust to missing data and outliers.
+- This model is preferred when the data shows strong seasonal patterns, irregular intervals, or structural changes, and when interpretability is important.
+
+# Comparing the models and Forecasting the model with the best model
 
 
 
