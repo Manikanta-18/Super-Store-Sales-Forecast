@@ -113,10 +113,6 @@ This dataset is well-suited for applying **time series forecasting techniques su
   - Depends on past errors
   - ACF helps find q
 
-\[
-Y_t = \epsilon_t + \theta_1 \epsilon_{t-1}
-\]
-
 
 
 ## 📊 PACF Plots:
@@ -160,6 +156,10 @@ Y_t = \epsilon_t + \theta_1 \epsilon_{t-1}
 - This model is preferred when the data shows strong seasonal patterns, irregular intervals, or structural changes, and when interpretability is important.
 
 # Comparing the models and Forecasting the model with the best model
+- Different forecasting models were compared using error metrics such as MSE and MAE to assess their predictive performance.
+- Based on the evaluation results, the model with the best performance was selected as the final forecasting model.
+- The best-performing model was used to generate sales forecasts for the next six months.
+
 
 
 
