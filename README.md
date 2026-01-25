@@ -96,21 +96,15 @@ This dataset is well-suited for applying **time series forecasting techniques su
 - The dataset spans 2015–2018, with 2015–2017 used as the training set and 2018 used as the test set.
 - Applied the Augmented Dickey–Fuller (ADF) test to assess stationarity and confirmed that the training data is stationary, meaning its statistical properties (mean and variance) remain constant over time.
 - Non-stationarity causes model parameters to change over time, meaning past patterns do not reliably predict future behavior. Since most forecasting models assume stationarity, this leads to poor forecasting performance when the data is non-stationary.
-- If the data is non-stationary, we apply differencing to remove trends, seasonal differencing to remove seasonality, and log or Box–Cox transformations to stabilize variance.
-- After seasonal differencing Repeating seasonal mean shifts, Long-term seasonal non-stationarity.
+- If the data is non-stationary, we apply differencing to remove trends, seasonal differencing to remove seasonality, and log or Box–Cox transformations to stabilize variance. We apply second-order differencing if the data is not stationary after the first order differencing.
+- Seasonal differencing removes repeating seasonal mean shifts and long-term seasonal non-stationarity.
   Example (monthly data, s = 12): High every December, low every January → removed, So after differencing:
   -The average December ≈ average January
   - Mean becomes stable → stationarity achieved
-  - Seasonal differencing does NOT remove:
-
-Correlation between same seasons across years
-
-Systematic seasonal dependence
-
-In real terms:
-
-If January sales last year affect January sales this year, that relationship remains
-- Though we make the data stationary, the dependence on previous values exists through correlation.
+  Seasonal differencing does NOT remove:
+  - Correlation between same seasons across years
+  - Systematic seasonal dependence
+- In some datasets, the mean and variance change together naturally—especially when the variance depends on the mean (e.g., log-normal data). In such cases, dividing the data into groups and comparing mean and variance is not reliable for assessing stationarity. Therefore, statistical tests like the Augmented Dickey–Fuller (ADF) test are used.
 
 # ACF and PACF plots:
 ## 📊 ACF Plot:
