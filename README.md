@@ -107,12 +107,33 @@ This dataset is well-suited for applying **time series forecasting techniques su
 - In some datasets, the mean and variance change together naturally—especially when the variance depends on the mean (e.g., log-normal data). In such cases, dividing the data into groups and comparing mean and variance is not reliable for assessing stationarity. Therefore, statistical tests like the Augmented Dickey–Fuller (ADF) test are used.
 
 # ACF and PACF plots:
-## 📊 ACF Plot:
+## 📊 Autocorrelation Function(ACF) Plot:
+- Measures how a value is correlated with its past values
+   ACF(k)=Corr(Yt​,Yt−k​)
+  - MA (Moving Average) model:
+
+\[
+Y_t = \epsilon_t + \theta_1 \epsilon_{t-1}
+\]
+
 
 
 ## 📊 PACF Plots:
-
+- Measures the direct correlation with a lag, after removing effects of intermediate lags
+  PACF(k)=Corr(Yt​,Yt−k​∣Yt−1​,Yt−2​,…,Yt−k+1​)
+- AR (AutoRegressive) model
+\[
+Y_t = \phi_1 Y_{t-1} + \phi_2 Y_{t-2} + \epsilon_t
+\]
+  - Depends on past values
+  - PACF helps find p
+ 
+  
 # Forecasting Models:
+## 🔹 AR 
+-AR(p):
+  - PACF → cuts off after lag p
+  - ACF → decays gradually
 ## 🔹 ARIMA  
 ## 🔹 PMDARIMA  
 ## 🔹 SARIMA  
